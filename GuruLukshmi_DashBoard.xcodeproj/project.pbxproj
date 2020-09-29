@@ -58,13 +58,13 @@
 		AE2398A22523E4C5004F6E1A /* GuruLukshmi_DashBoard */ = {
 			isa = PBXGroup;
 			children = (
-				AE2398A32523E4C5004F6E1A /* AppDelegate.swift */,
-				AE2398A52523E4C5004F6E1A /* SceneDelegate.swift */,
-				AE2398AA2523E4C5004F6E1A /* ContentView.swift */,
+				AE2398BC2523E4EA004F6E1A /* Database */,
+				AE2398BB2523E4E4004F6E1A /* Service */,
+				AE2398BA2523E4DA004F6E1A /* App */,
+				AE2398BD2523E4F1004F6E1A /* Views */,
 				AE2398AC2523E4C8004F6E1A /* Assets.xcassets */,
 				AE2398B12523E4C8004F6E1A /* LaunchScreen.storyboard */,
 				AE2398B42523E4C8004F6E1A /* Info.plist */,
-				AE2398A72523E4C5004F6E1A /* GuruLukshmi_DashBoard.xcdatamodeld */,
 				AE2398AE2523E4C8004F6E1A /* Preview Content */,
 			);
 			path = GuruLukshmi_DashBoard;
@@ -76,6 +76,38 @@
 				AE2398AF2523E4C8004F6E1A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE2398BA2523E4DA004F6E1A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AE2398A52523E4C5004F6E1A /* SceneDelegate.swift */,
+				AE2398A32523E4C5004F6E1A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AE2398BB2523E4E4004F6E1A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AE2398BC2523E4EA004F6E1A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				AE2398A72523E4C5004F6E1A /* GuruLukshmi_DashBoard.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		AE2398BD2523E4F1004F6E1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE2398AA2523E4C5004F6E1A /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prog31632.GuruLukshmi-DashBoard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -318,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prog31632.GuruLukshmi-DashBoard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
