@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65004297A099AFDAFC7959D9 /* Pods_GuruLukshmi_DashBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2664591760404296599176D /* Pods_GuruLukshmi_DashBoard.framework */; };
 		AE2398A42523E4C5004F6E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398A32523E4C5004F6E1A /* AppDelegate.swift */; };
 		AE2398A62523E4C5004F6E1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398A52523E4C5004F6E1A /* SceneDelegate.swift */; };
 		AE2398A92523E4C5004F6E1A /* GuruLukshmi_DashBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE2398A72523E4C5004F6E1A /* GuruLukshmi_DashBoard.xcdatamodeld */; };
@@ -14,6 +15,16 @@
 		AE2398AD2523E4C8004F6E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2398AC2523E4C8004F6E1A /* Assets.xcassets */; };
 		AE2398B02523E4C8004F6E1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2398AF2523E4C8004F6E1A /* Preview Assets.xcassets */; };
 		AE2398B32523E4C8004F6E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2398B12523E4C8004F6E1A /* LaunchScreen.storyboard */; };
+		AE2398BF2523E5D9004F6E1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE2398BE2523E5D9004F6E1A /* GoogleService-Info.plist */; };
+		AE2398C22523E9DA004F6E1A /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398C12523E9DA004F6E1A /* OrderViewModel.swift */; };
+		AE2398C82523EA05004F6E1A /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398C32523EA02004F6E1A /* FoodCategory.swift */; };
+		AE2398C92523EA05004F6E1A /* ListOfOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398C42523EA03004F6E1A /* ListOfOrder.swift */; };
+		AE2398CA2523EA05004F6E1A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398C52523EA04004F6E1A /* Food.swift */; };
+		AE2398CB2523EA05004F6E1A /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398C62523EA04004F6E1A /* OrderModel.swift */; };
+		AE2398CC2523EA05004F6E1A /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398C72523EA05004F6E1A /* Orders.swift */; };
+		AE2398D02523EA6D004F6E1A /* CurrentOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */; };
+		AE2398D12523EA6D004F6E1A /* OrdersInDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */; };
+		AE2398D22523EA6D004F6E1A /* DisplayOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,19 @@
 		AE2398AF2523E4C8004F6E1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE2398B22523E4C8004F6E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE2398B42523E4C8004F6E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE2398BE2523E5D9004F6E1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE2398C12523E9DA004F6E1A /* OrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		AE2398C32523EA02004F6E1A /* FoodCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
+		AE2398C42523EA03004F6E1A /* ListOfOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfOrder.swift; sourceTree = "<group>"; };
+		AE2398C52523EA04004F6E1A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		AE2398C62523EA04004F6E1A /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		AE2398C72523EA05004F6E1A /* Orders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentOrders.swift; sourceTree = "<group>"; };
+		AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersInDetail.swift; sourceTree = "<group>"; };
+		AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayOrder.swift; sourceTree = "<group>"; };
+		B2664591760404296599176D /* Pods_GuruLukshmi_DashBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuruLukshmi_DashBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30598AFF2BA1C09D4BAE5A0 /* Pods-GuruLukshmi_DashBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruLukshmi_DashBoard.release.xcconfig"; path = "Target Support Files/Pods-GuruLukshmi_DashBoard/Pods-GuruLukshmi_DashBoard.release.xcconfig"; sourceTree = "<group>"; };
+		CE9660EB3EBBF38E2F47498D /* Pods-GuruLukshmi_DashBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruLukshmi_DashBoard.debug.xcconfig"; path = "Target Support Files/Pods-GuruLukshmi_DashBoard/Pods-GuruLukshmi_DashBoard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65004297A099AFDAFC7959D9 /* Pods_GuruLukshmi_DashBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E77792CF366D5EAAAEB6725 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE9660EB3EBBF38E2F47498D /* Pods-GuruLukshmi_DashBoard.debug.xcconfig */,
+				C30598AFF2BA1C09D4BAE5A0 /* Pods-GuruLukshmi_DashBoard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		79244593C4BC0A25FF51757F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2664591760404296599176D /* Pods_GuruLukshmi_DashBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE2398972523E4C5004F6E1A = {
 			isa = PBXGroup;
 			children = (
 				AE2398A22523E4C5004F6E1A /* GuruLukshmi_DashBoard */,
 				AE2398A12523E4C5004F6E1A /* Products */,
+				3E77792CF366D5EAAAEB6725 /* Pods */,
+				79244593C4BC0A25FF51757F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,10 +105,12 @@
 				AE2398BC2523E4EA004F6E1A /* Database */,
 				AE2398BB2523E4E4004F6E1A /* Service */,
 				AE2398BA2523E4DA004F6E1A /* App */,
+				AE2398C02523E93D004F6E1A /* Model */,
 				AE2398BD2523E4F1004F6E1A /* Views */,
 				AE2398AC2523E4C8004F6E1A /* Assets.xcassets */,
 				AE2398B12523E4C8004F6E1A /* LaunchScreen.storyboard */,
 				AE2398B42523E4C8004F6E1A /* Info.plist */,
+				AE2398BE2523E5D9004F6E1A /* GoogleService-Info.plist */,
 				AE2398AE2523E4C8004F6E1A /* Preview Content */,
 			);
 			path = GuruLukshmi_DashBoard;
@@ -90,6 +136,7 @@
 		AE2398BB2523E4E4004F6E1A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				AE2398C12523E9DA004F6E1A /* OrderViewModel.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -105,9 +152,24 @@
 		AE2398BD2523E4F1004F6E1A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */,
+				AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */,
+				AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */,
 				AE2398AA2523E4C5004F6E1A /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AE2398C02523E93D004F6E1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE2398C52523EA04004F6E1A /* Food.swift */,
+				AE2398C32523EA02004F6E1A /* FoodCategory.swift */,
+				AE2398C42523EA03004F6E1A /* ListOfOrder.swift */,
+				AE2398C62523EA04004F6E1A /* OrderModel.swift */,
+				AE2398C72523EA05004F6E1A /* Orders.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE2398B72523E4C8004F6E1A /* Build configuration list for PBXNativeTarget "GuruLukshmi_DashBoard" */;
 			buildPhases = (
+				7E7D4FC01C07B86A16E1B398 /* [CP] Check Pods Manifest.lock */,
 				AE23989C2523E4C5004F6E1A /* Sources */,
 				AE23989D2523E4C5004F6E1A /* Frameworks */,
 				AE23989E2523E4C5004F6E1A /* Resources */,
+				030BC645AFEFD32E60300914 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2398B32523E4C8004F6E1A /* LaunchScreen.storyboard in Resources */,
+				AE2398BF2523E5D9004F6E1A /* GoogleService-Info.plist in Resources */,
 				AE2398B02523E4C8004F6E1A /* Preview Assets.xcassets in Resources */,
 				AE2398AD2523E4C8004F6E1A /* Assets.xcassets in Resources */,
 			);
@@ -176,13 +241,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030BC645AFEFD32E60300914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuruLukshmi_DashBoard/Pods-GuruLukshmi_DashBoard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuruLukshmi_DashBoard/Pods-GuruLukshmi_DashBoard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuruLukshmi_DashBoard/Pods-GuruLukshmi_DashBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E7D4FC01C07B86A16E1B398 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuruLukshmi_DashBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE23989C2523E4C5004F6E1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2398D12523EA6D004F6E1A /* OrdersInDetail.swift in Sources */,
 				AE2398A42523E4C5004F6E1A /* AppDelegate.swift in Sources */,
+				AE2398CB2523EA05004F6E1A /* OrderModel.swift in Sources */,
+				AE2398D22523EA6D004F6E1A /* DisplayOrder.swift in Sources */,
+				AE2398C82523EA05004F6E1A /* FoodCategory.swift in Sources */,
 				AE2398A62523E4C5004F6E1A /* SceneDelegate.swift in Sources */,
+				AE2398CC2523EA05004F6E1A /* Orders.swift in Sources */,
+				AE2398D02523EA6D004F6E1A /* CurrentOrders.swift in Sources */,
+				AE2398C92523EA05004F6E1A /* ListOfOrder.swift in Sources */,
+				AE2398C22523E9DA004F6E1A /* OrderViewModel.swift in Sources */,
+				AE2398CA2523EA05004F6E1A /* Food.swift in Sources */,
 				AE2398AB2523E4C5004F6E1A /* ContentView.swift in Sources */,
 				AE2398A92523E4C5004F6E1A /* GuruLukshmi_DashBoard.xcdatamodeld in Sources */,
 			);
@@ -318,6 +434,7 @@
 		};
 		AE2398B82523E4C8004F6E1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9660EB3EBBF38E2F47498D /* Pods-GuruLukshmi_DashBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,6 +454,7 @@
 		};
 		AE2398B92523E4C8004F6E1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C30598AFF2BA1C09D4BAE5A0 /* Pods-GuruLukshmi_DashBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
