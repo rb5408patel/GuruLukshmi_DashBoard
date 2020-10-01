@@ -25,6 +25,7 @@
 		AE2398D02523EA6D004F6E1A /* CurrentOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */; };
 		AE2398D12523EA6D004F6E1A /* OrdersInDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */; };
 		AE2398D22523EA6D004F6E1A /* DisplayOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */; };
+		AE781F7F252564AD0033B037 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE781F7E252564AD0033B037 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentOrders.swift; sourceTree = "<group>"; };
 		AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersInDetail.swift; sourceTree = "<group>"; };
 		AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayOrder.swift; sourceTree = "<group>"; };
+		AE781F7E252564AD0033B037 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		B2664591760404296599176D /* Pods_GuruLukshmi_DashBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuruLukshmi_DashBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30598AFF2BA1C09D4BAE5A0 /* Pods-GuruLukshmi_DashBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruLukshmi_DashBoard.release.xcconfig"; path = "Target Support Files/Pods-GuruLukshmi_DashBoard/Pods-GuruLukshmi_DashBoard.release.xcconfig"; sourceTree = "<group>"; };
 		CE9660EB3EBBF38E2F47498D /* Pods-GuruLukshmi_DashBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuruLukshmi_DashBoard.debug.xcconfig"; path = "Target Support Files/Pods-GuruLukshmi_DashBoard/Pods-GuruLukshmi_DashBoard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */,
 				AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */,
 				AE2398AA2523E4C5004F6E1A /* ContentView.swift */,
+				AE781F7E252564AD0033B037 /* HistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				AE2398C82523EA05004F6E1A /* FoodCategory.swift in Sources */,
 				AE2398A62523E4C5004F6E1A /* SceneDelegate.swift in Sources */,
 				AE2398CC2523EA05004F6E1A /* Orders.swift in Sources */,
+				AE781F7F252564AD0033B037 /* HistoryView.swift in Sources */,
 				AE2398D02523EA6D004F6E1A /* CurrentOrders.swift in Sources */,
 				AE2398C92523EA05004F6E1A /* ListOfOrder.swift in Sources */,
 				AE2398C22523E9DA004F6E1A /* OrderViewModel.swift in Sources */,

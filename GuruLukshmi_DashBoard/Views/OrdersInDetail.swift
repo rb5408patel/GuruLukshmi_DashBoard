@@ -14,18 +14,13 @@ struct OrdersInDetail: View {
     var body: some View {
         
         VStack(spacing: 100){
-            //List{
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(spacing: 10){
                     ForEach(orderDetail.listOfOrder){ eachOrder in
-                        
-                           // Text(eachOrder.foodRefrence.foodName)
-                           // Text("\(eachOrder.foodQuantity)")
                             DisplayOrder(food: eachOrder).cornerRadius(15)
                     }
                 }
             }.padding(.horizontal, 30)
-            //}
             Button(action: {
                 self.showingAlert = true
             }) {

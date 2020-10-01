@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CurrentOrders: View {
+        
     @State private var showingAlert = false
     @ObservedObject var orderVM = OrderViewModel()
     var body: some View {
@@ -18,19 +19,22 @@ struct CurrentOrders: View {
                     ForEach(orderVM.orderList, id: \.self){ order in
                         NavigationLink(destination: OrdersInDetail(orderDetail: order)) {
                             Text("Customer Name: \(order.cName) \nOrder Id: \(order.id ?? "")")
-                            
                         }
-                        
-                    }
+                    }.onDelete(perform: deleteItem)
                 }
             }.edgesIgnoringSafeArea(.all).padding(.top, 30)
                 .navigationBarTitle(Text("Current Orders"))
-            
-            //swipeGesture()
         }
         }
     }
+    
+    func deleteItem(at offset: IndexSet) {
+        
+        orderVM.orderList.remove(atOffsets: offset)
+        
+    }
 }
+
 
 struct CurrentOrders_Previews: PreviewProvider {
     static var previews: some View {
