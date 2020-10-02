@@ -11,6 +11,10 @@ struct CurrentOrders: View {
         
     @State private var showingAlert = false
     @ObservedObject var orderVM = OrderViewModel()
+    @State private var deleteIndexSet: IndexSet?
+   // @State var deleteOrder = Orders()
+   // @EnvironmentObject var envObj: GlobalVariables
+    
     var body: some View {
         NavigationView{
         ZStack{
@@ -20,16 +24,16 @@ struct CurrentOrders: View {
                         NavigationLink(destination: OrdersInDetail(orderDetail: order)) {
                             Text("Customer Name: \(order.cName) \nOrder Id: \(order.id ?? "")")
                         }
-                    }.onDelete(perform: deleteItem)
+                        }.onDelete(perform: deleteItem)
                 }
             }.edgesIgnoringSafeArea(.all).padding(.top, 30)
                 .navigationBarTitle(Text("Current Orders"))
         }
         }
     }
+
     
     func deleteItem(at offset: IndexSet) {
-        
         orderVM.orderList.remove(atOffsets: offset)
         
     }
@@ -38,7 +42,7 @@ struct CurrentOrders: View {
 
 struct CurrentOrders_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentOrders()
+        CurrentOrders().environmentObject(GlobalVariables())
     }
 }
 
@@ -66,9 +70,12 @@ struct swipeGesture : UIViewRepresentable {
     }
     
     class Coordinator: NSObject {
-        
+        @ObservedObject var orderVM = OrderViewModel()
+        @EnvironmentObject var envObj: GlobalVariables
         @objc func left(){
             print("ADDED TO HISTORY")
+            orderVM.deleteOrder(self.envObj.deletedOrder)
+            
         }
     }
     

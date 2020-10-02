@@ -36,4 +36,16 @@ class OrderViewModel: ObservableObject {
             }
         }
     }
+    
+    func deleteOrder(_ order: Orders){
+        if let orderID = order.id{
+            db.collection("Orders").document(orderID).delete(){ err in
+                if let err = err{
+                    print("Error deleting Order: \(err)")
+                }else{
+                    print("Order deleted!")
+                }
+            }
+        }
+    }
 }
