@@ -12,6 +12,7 @@ struct CurrentOrders: View {
     @State private var showingAlert = false
     @ObservedObject var orderVM = OrderViewModel()
     @State private var deleteIndexSet: IndexSet?
+    @State var showHistory = true
    // @State var deleteOrder = Orders()
    // @EnvironmentObject var envObj: GlobalVariables
     
@@ -21,10 +22,10 @@ struct CurrentOrders: View {
             VStack {
                 List{
                     ForEach(orderVM.orderList, id: \.self){ order in
-                        NavigationLink(destination: OrdersInDetail(orderDetail: order)) {
+                        NavigationLink(destination: OrdersInDetail(showHistory: self.$showHistory, orderDetail: order)) {
                             Text("Customer Name: \(order.cName) \nOrder Id: \(order.id ?? "")")
                         }
-                        }.onDelete(perform: deleteItem)
+                        }//.onDelete(perform: deleteItem)
                 }
             }.edgesIgnoringSafeArea(.all).padding(.top, 30)
                 .navigationBarTitle(Text("Current Orders"))
@@ -74,7 +75,6 @@ struct swipeGesture : UIViewRepresentable {
         @EnvironmentObject var envObj: GlobalVariables
         @objc func left(){
             print("ADDED TO HISTORY")
-            orderVM.deleteOrder(self.envObj.deletedOrder)
             
         }
     }

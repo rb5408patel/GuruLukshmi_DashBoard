@@ -27,11 +27,13 @@ struct ContentView: View {
                 Text("Current Orders: \(self.orderVM.orderList.count)").padding().border(Color.green, width: 3)
                     .font(.title).foregroundColor(.white)
                 List{
-                    ForEach(arrString , id: \.self){ str in
+                    //ForEach(arrString , id: \.self){ str in
                         NavigationLink(destination: CurrentOrders()) {
-                            Text(str)
+                            Text("Current Orders")
                         }
-                        
+                   // }
+                    NavigationLink(destination: HistoryView()) {
+                        Text("History")
                     }
                 }
             

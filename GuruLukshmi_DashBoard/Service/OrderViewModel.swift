@@ -8,13 +8,17 @@
 
 import Foundation
 import FirebaseFirestore
+import Firebase
+import FirebaseFirestoreSwift
 
 class OrderViewModel: ObservableObject {
     @Published var orderList = [Orders]()
+    @Published var historyOrderList = [Orders]()
     private var db = Firestore.firestore()
     
     init() {
         fetchData()
+        fetchHistoryData()
     }
     
     func fetchData() {
@@ -37,6 +41,25 @@ class OrderViewModel: ObservableObject {
         }
     }
     
+    func fetchHistoryData() {
+        db.collection("OrderHistory")
+        .order(by: "orderedTime")
+            .addSnapshotListener { (querySnapshot, error) in
+            if let querySnapshot = querySnapshot{
+                self.historyOrderList = querySnapshot.documents.compactMap{ document in
+                    do{
+                        let x = try document.data(as: Orders.self)
+                        return x
+                    }
+                    catch{
+                        print(error)
+                    }
+                    return nil
+                }
+            }
+        }
+    }
+    
     func deleteOrder(_ order: Orders){
         if let orderID = order.id{
             db.collection("Orders").document(orderID).delete(){ err in
@@ -46,6 +69,15 @@ class OrderViewModel: ObservableObject {
                     print("Order deleted!")
                 }
             }
+        }
+    }
+    
+    func addToHistory(_ order: Orders) {
+        do{
+            let _ = try db.collection("OrderHistory").addDocument(from: order)
+        }
+        catch{
+            fatalError("Can't add to History \(error.localizedDescription)")
         }
     }
 }
