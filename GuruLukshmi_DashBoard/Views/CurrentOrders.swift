@@ -34,10 +34,10 @@ struct CurrentOrders: View {
     }
 
     
-    func deleteItem(at offset: IndexSet) {
+    /*func deleteItem(at offset: IndexSet) {
         orderVM.orderList.remove(atOffsets: offset)
         
-    }
+    }*/
 }
 
 

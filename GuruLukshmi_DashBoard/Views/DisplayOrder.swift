@@ -56,6 +56,6 @@ struct DisplayOrder: View {
 
 struct DisplayOrder_Previews: PreviewProvider {
     static var previews: some View {
-        DisplayOrder(food: ListOfOrder(id: "dsfs", foodRefrence: testData, foodQuantity: 2))
+        DisplayOrder(food: ListOfOrder(id: "dsfs", foodRefrence: testData[0], foodQuantity: 2))
     }
 }
