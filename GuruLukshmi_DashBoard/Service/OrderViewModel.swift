@@ -21,6 +21,7 @@ class OrderViewModel: ObservableObject {
         fetchHistoryData()
     }
     
+    //Fetching data from Order table 
     func fetchData() {
         db.collection("Orders")
         .order(by: "orderedTime")
@@ -40,7 +41,7 @@ class OrderViewModel: ObservableObject {
             }
         }
     }
-    
+    //Getting order from History table
     func fetchHistoryData() {
         db.collection("OrderHistory")
         .order(by: "orderedTime")

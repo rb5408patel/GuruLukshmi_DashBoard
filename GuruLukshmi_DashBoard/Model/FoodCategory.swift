@@ -11,6 +11,7 @@ import Combine
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
+/// # Category Model which includes categroy type and it's image
 struct FoodCategory: Codable, Identifiable, Hashable {
     @DocumentID var id: String?
     var foodType: String

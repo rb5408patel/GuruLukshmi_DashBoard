@@ -11,6 +11,7 @@ import Combine
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
+/// # Food Model and it's Attributes
 struct Food: Codable, Identifiable, Hashable {
     @DocumentID var id: String?
     var foodName: String
@@ -19,20 +20,18 @@ struct Food: Codable, Identifiable, Hashable {
     var foodSubCategory: String?
     var imgName: String
     var categoryImage: String
+    var foodPrice: Double
 
 }
 
 
 
-
 #if DEBUG
-let testData = [
-    // MARK: - Appetizers
-    Food(foodName: "Chilli Bajji (Pakora)", foodDescription: "Deep fried mild chillies coated with mildly spiced chick pea batter served with coconut and coriander chutney",  foodType: "Appetizers", foodSubCategory: "Finger Foods" , imgName: "springRoll", categoryImage: "Appetizers"),
-
-    // MARK: - Dosa
-    Food(foodName: "Plain Dosa", foodDescription: "A golden thin crepe made of fermented lentil and rice batter",  foodType: "Dosa", foodSubCategory: "DOSA - BASICS", imgName: "dosa", categoryImage: "Dosa")
-   
+    let testData = [
+        // MARK: - Appetizers
+        Food(foodName: "Chilli Bajji (Pakora)", foodDescription: "Deep fried mild chillies coated with mildly spiced chick pea batter served with coconut and coriander chutney",  foodType: "Appetizers", foodSubCategory: "Finger Foods" , imgName: "Appetizers", categoryImage: "Appetizers",foodPrice: 6.50),
+        Food(foodName: "Potato Bonda", foodDescription: "Deep fried potato ball fritters served with coconut chutney",  foodType: "Appetizers",foodSubCategory: "Finger Foods", imgName: "Appetizers", categoryImage: "Appetizers",foodPrice: 6.50),
+        Food(foodName: "Samosa Plate", foodDescription: "Fried Indian pastry stuffed with flavoured potatoes served with coriander and tamarind chutney", foodType: "Appetizers",foodSubCategory: "Finger Foods", imgName: "Appetizers", categoryImage: "Appetizers",foodPrice: 4.50)
 ]
 #endif
 
