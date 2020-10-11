@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: - Core Data stack
-
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -66,7 +65,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -86,4 +84,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension Color{
     static let newPrimaryColor = Color("primaryColor")
     static let newSecondaryColor = Color("secondaryColor")
+}
+
+extension Timestamp {
+    static let currentDate = Date().timeIntervalSince1970
 }

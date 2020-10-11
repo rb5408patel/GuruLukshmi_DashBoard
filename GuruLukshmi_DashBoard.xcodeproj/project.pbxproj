@@ -25,6 +25,13 @@
 		AE2398D02523EA6D004F6E1A /* CurrentOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */; };
 		AE2398D12523EA6D004F6E1A /* OrdersInDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */; };
 		AE2398D22523EA6D004F6E1A /* DisplayOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */; };
+		AE2A8A8825316D52004EE6B4 /* AnalyticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8A8725316D52004EE6B4 /* AnalyticalView.swift */; };
+		AE2A8A8C25329391004EE6B4 /* UserObjectModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8A8B25329391004EE6B4 /* UserObjectModelData.swift */; };
+		AE2A8A8E25329418004EE6B4 /* AccessCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8A8D25329418004EE6B4 /* AccessCode.swift */; };
+		AE2A8A9125329559004EE6B4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8A9025329559004EE6B4 /* LoginView.swift */; };
+		AE2A8A9325329568004EE6B4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8A9225329568004EE6B4 /* LoadingView.swift */; };
+		AE2A8A9525329583004EE6B4 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8A9425329583004EE6B4 /* SignUpView.swift */; };
+		AE2A8A97253295A2004EE6B4 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A8A96253295A2004EE6B4 /* CustomTextFieldView.swift */; };
 		AE781F7F252564AD0033B037 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE781F7E252564AD0033B037 /* HistoryView.swift */; };
 		AE781F81252668B20033B037 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE781F80252668B20033B037 /* GlobalVariables.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +56,13 @@
 		AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentOrders.swift; sourceTree = "<group>"; };
 		AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersInDetail.swift; sourceTree = "<group>"; };
 		AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayOrder.swift; sourceTree = "<group>"; };
+		AE2A8A8725316D52004EE6B4 /* AnalyticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticalView.swift; sourceTree = "<group>"; };
+		AE2A8A8B25329391004EE6B4 /* UserObjectModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObjectModelData.swift; sourceTree = "<group>"; };
+		AE2A8A8D25329418004EE6B4 /* AccessCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCode.swift; sourceTree = "<group>"; };
+		AE2A8A9025329559004EE6B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AE2A8A9225329568004EE6B4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AE2A8A9425329583004EE6B4 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		AE2A8A96253295A2004EE6B4 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		AE781F7E252564AD0033B037 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		AE781F80252668B20033B037 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		B2664591760404296599176D /* Pods_GuruLukshmi_DashBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuruLukshmi_DashBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,11 +171,13 @@
 		AE2398BD2523E4F1004F6E1A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE2A8A8F25329541004EE6B4 /* LoginView */,
 				AE2398CD2523EA6B004F6E1A /* CurrentOrders.swift */,
 				AE2398CF2523EA6D004F6E1A /* DisplayOrder.swift */,
 				AE2398CE2523EA6C004F6E1A /* OrdersInDetail.swift */,
 				AE2398AA2523E4C5004F6E1A /* ContentView.swift */,
 				AE781F7E252564AD0033B037 /* HistoryView.swift */,
+				AE2A8A8725316D52004EE6B4 /* AnalyticalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,8 +190,21 @@
 				AE2398C42523EA03004F6E1A /* ListOfOrder.swift */,
 				AE2398C62523EA04004F6E1A /* OrderModel.swift */,
 				AE2398C72523EA05004F6E1A /* Orders.swift */,
+				AE2A8A8B25329391004EE6B4 /* UserObjectModelData.swift */,
+				AE2A8A8D25329418004EE6B4 /* AccessCode.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AE2A8A8F25329541004EE6B4 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				AE2A8A9025329559004EE6B4 /* LoginView.swift */,
+				AE2A8A9225329568004EE6B4 /* LoadingView.swift */,
+				AE2A8A9425329583004EE6B4 /* SignUpView.swift */,
+				AE2A8A96253295A2004EE6B4 /* CustomTextFieldView.swift */,
+			);
+			path = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE2398D12523EA6D004F6E1A /* OrdersInDetail.swift in Sources */,
+				AE2A8A8C25329391004EE6B4 /* UserObjectModelData.swift in Sources */,
 				AE2398A42523E4C5004F6E1A /* AppDelegate.swift in Sources */,
 				AE2398CB2523EA05004F6E1A /* OrderModel.swift in Sources */,
 				AE2398D22523EA6D004F6E1A /* DisplayOrder.swift in Sources */,
@@ -303,10 +333,16 @@
 				AE2398CC2523EA05004F6E1A /* Orders.swift in Sources */,
 				AE781F7F252564AD0033B037 /* HistoryView.swift in Sources */,
 				AE2398D02523EA6D004F6E1A /* CurrentOrders.swift in Sources */,
+				AE2A8A9525329583004EE6B4 /* SignUpView.swift in Sources */,
+				AE2A8A8E25329418004EE6B4 /* AccessCode.swift in Sources */,
 				AE781F81252668B20033B037 /* GlobalVariables.swift in Sources */,
+				AE2A8A97253295A2004EE6B4 /* CustomTextFieldView.swift in Sources */,
 				AE2398C92523EA05004F6E1A /* ListOfOrder.swift in Sources */,
+				AE2A8A9325329568004EE6B4 /* LoadingView.swift in Sources */,
 				AE2398C22523E9DA004F6E1A /* OrderViewModel.swift in Sources */,
+				AE2A8A8825316D52004EE6B4 /* AnalyticalView.swift in Sources */,
 				AE2398CA2523EA05004F6E1A /* Food.swift in Sources */,
+				AE2A8A9125329559004EE6B4 /* LoginView.swift in Sources */,
 				AE2398AB2523E4C5004F6E1A /* ContentView.swift in Sources */,
 				AE2398A92523E4C5004F6E1A /* GuruLukshmi_DashBoard.xcdatamodeld in Sources */,
 			);

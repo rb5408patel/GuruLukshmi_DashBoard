@@ -13,8 +13,6 @@ struct CurrentOrders: View {
     @ObservedObject var orderVM = OrderViewModel()
     @State private var deleteIndexSet: IndexSet?
     @State var showHistory = true
-   // @State var deleteOrder = Orders()
-   // @EnvironmentObject var envObj: GlobalVariables
     
     var body: some View {
         NavigationView{
@@ -25,29 +23,23 @@ struct CurrentOrders: View {
                         NavigationLink(destination: OrdersInDetail(showHistory: self.$showHistory, orderDetail: order)) {
                             Text("Customer Name: \(order.cName) \nOrder Id: \(order.id ?? "")")
                         }
-                        }//.onDelete(perform: deleteItem)
+                        }
                 }
             }.edgesIgnoringSafeArea(.all).padding(.top, 30)
                 .navigationBarTitle(Text("Current Orders"))
         }
         }
     }
-
-    
-    /*func deleteItem(at offset: IndexSet) {
-        orderVM.orderList.remove(atOffsets: offset)
-        
-    }*/
 }
 
 
 struct CurrentOrders_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentOrders().environmentObject(GlobalVariables())
+        CurrentOrders()
     }
 }
 
-struct swipeGesture : UIViewRepresentable {
+/*struct swipeGesture : UIViewRepresentable {
     
     func makeCoordinator() -> swipeGesture.Coordinator {
         return swipeGesture.Coordinator()
@@ -77,7 +69,7 @@ struct swipeGesture : UIViewRepresentable {
             print("ADDED TO HISTORY")
             
         }
-    }
+    }*/
     
-}
+
     

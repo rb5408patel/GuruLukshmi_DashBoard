@@ -18,7 +18,7 @@ struct DisplayOrder: View {
                 Image(food.foodRefrence.imgName).resizable()
                     .frame(height: 200)
                     .mask(LinearGradient(gradient: fade
-                                         , startPoint: .top, endPoint: .bottom))
+                        , startPoint: .top, endPoint: .bottom))
                 Text(food.foodRefrence.foodName)
                     .font(.system(size: 30, weight: Font.Weight.bold, design: Font.Design.rounded))
                     .foregroundColor(.newPrimaryColor)
@@ -48,9 +48,7 @@ struct DisplayOrder: View {
                 
                 Spacer()
             }
-            
         }.frame(width: 300, height: 500)
-        
     }
 }
 
